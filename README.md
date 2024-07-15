@@ -1,48 +1,51 @@
-# youtubedata
 
-YouTube Video Statistics Fetcher
+# YouTube Video Statistics Fetcher
 
-YouTube Video Statistics Fetcher
+## Descrição
 
-Description
+O **YouTube Video Statistics Fetcher** é um script em Python que utiliza a YouTube Data API para buscar e exibir estatísticas detalhadas de vídeos do YouTube. É particularmente útil para analisar tendências e a popularidade de conteúdos relacionados a uma palavra-chave específica no YouTube. Atualmente, o script está configurado para buscar vídeos relacionados a 'PicPay'.
 
-This Python script utilizes the YouTube Data API to fetch and display detailed statistics of YouTube videos. It's particularly useful for analyzing trends and popularity of content related to a specific keyword on YouTube. Currently, the script is set up to search
-for videos related to 'PicPay'.
+## Funcionalidades
 
+- Busca de vídeos no YouTube com base em palavras-chave.
+- Ordenação de vídeos por contagem de visualizações.
+- Filtragem de vídeos publicados no último ano.
+- Recuperação de estatísticas detalhadas, incluindo visualizações, curtidas, descurtidas, comentários e tags.
+- Exibição de miniaturas de vídeos.
 
-Features
+## Instalação
 
-Keyword-based search for YouTube videos.
+Para instalar e executar este projeto localmente, siga os passos abaixo:
 
-Ordering of videos by view count.
+1. Clone o repositório:
+    ```bash
+    git clone https://github.com/seu-usuario/youtubedata.git
+    cd youtubedata
+    ```
 
-Filtering videos published in the last year.
+2. Instale as dependências listadas no arquivo `requirements.txt`:
+    ```bash
+    pip install -r requirements.txt
+    ```
 
-Retrieval of detailed statistics, including views, likes, dislikes, comments, and tags.
+## Uso
 
-Display of video thumbnails.
+1. Obtenha uma chave de API do Google Cloud Console para acessar a YouTube Data API.
+2. Substitua `'YOUR_API_KEY_HERE'` no script pela sua chave de API.
+3. Execute o script para ver os resultados no console:
+    ```bash
+    python youtubedata.py
+    ```
 
-How to Use
+## Dependências
 
-Clone the repository to your local machine.
+- `google-api-python-client`
+- `datetime`
 
-Install the required dependencies listed in the requirements.txt file.
+## Contribuição
 
-Obtain an API key from the Google Cloud Console to access the YouTube Data API.
+Contribuições são bem-vindas! Sinta-se à vontade para fazer um fork do repositório, fazer mudanças e enviar um pull request.
 
-Replace 'YOUR_API_KEY_HERE' in the script with your API key.
+## Licença
 
-Run the script to see the results in the console.
-
-Dependencies
-
-google-api-python-client
-
-datetime
-
-Contributions
-
-Contributions to the project are welcome! Feel free to fork the repository, make changes, and submit a pull request.
-
-License
-This project is under a free license. See the LICENSE file for more details.
+Este projeto está sob uma licença livre. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
